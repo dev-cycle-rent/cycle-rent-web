@@ -10,6 +10,7 @@ import { MainPageMainSliderComponent } from './components/main-page-context/inne
 import { MainPageFormComponent } from './components/main-page-context/inner-items/main-page-form/main-page-form.component';
 import { MainPagePopularCyclesComponent } from './components/main-page-context/inner-items/main-page-popular-cycles/main-page-popular-cycles.component';
 import {ShareModule} from "../share/share.module";
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {ShareModule} from "../share/share.module";
   imports: [
     CommonModule,
     ProcessRoutingModule,
-    ShareModule
+    ShareModule,
+    MatIconModule
   ]
 })
 export class ProcessModule { }
