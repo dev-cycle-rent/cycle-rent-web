@@ -11,6 +11,7 @@ import {
 
 const routes: Routes = [
   { path: '', component: ProcessComponent,children:[
+      {path:'',redirectTo:'home',pathMatch:'full'},
       { path: 'home', component: MainPageContextComponent},
       { path: 'cycle-details', component: BikeDetailsPageContextComponent},
       { path: 'rental-details', component: RentalDetailsPageContextComponent}
