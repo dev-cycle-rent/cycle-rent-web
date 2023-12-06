@@ -1,0 +1,223 @@
+.rental-main{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  .rental-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rental-left-content{
+      height: 80%;
+      width: 80%;
+      border-radius: 25px;
+      box-shadow: rgba(3, 3, 3, 0.10) 0 2px 10px;
+      .r-l-c-top{
+        width: 100%;
+        height: 50%;
+        border-radius: inherit;
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/cyclerent-94e02.appspot.com/o/white-bicycle-standing-park.jpg?alt=media&token=b488fe65-0b18-4188-bed2-0c7ef3d49a7c");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .r-l-c-bottom{
+        width: 100%;
+        height: 50%;
+        .bike-m-r-div{
+          padding-top: 20px;
+          height: 20%;
+          padding-left: 10px;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          .bike-model{
+            color: #030303;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          .bike-rate{
+            margin-left: 20px;
+          }
+        }
+      }
+      .rental-details{
+        width: 100%;
+        height: 80%;
+        padding-left: 10px;
+        padding-top: 40px;
+        .rd-content-div{
+          margin-bottom: 12px;
+          color: #030303;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .duration-div{
+          .p-r-div{
+            margin-bottom: 12px;
+            color: #030303;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            span{
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rental-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    .r-l-content{
+      width: 85%;
+      height: 80%;
+      .r-l-content-heading{
+        color: #030303;
+        font-size: 18px;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .r-l-content-duration{
+        margin-bottom: 25px;
+        .r-l-content-duration-detail{
+          color: #030303;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          mat-icon{
+            margin-right: 10px;
+          }
+          span{
+            margin-left: 25px;
+          }
+        }
+      }
+      .contact-details-div{
+        margin-bottom: 25px;
+        .contact-details-cmn-div{
+          margin-bottom: 10px;
+          color: #030303;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          span{
+            margin-left: 25px;
+          }
+        }
+      }
+      .total-rent-div{
+        color: #030303;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 25px;
+        span{
+          margin-left: 25px;
+        }
+        .paid-btn{
+          width: 60px;
+          height: 20px;
+          border: none;
+          background-color: #2677CC;
+          color: white;
+          text-align: center;
+          border-radius: 10px;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-left: 30px;
+        }
+      }
+      .contact-support-btn{
+        margin-bottom: 25px;
+        width: 283px;
+        height: 30px;
+        border: none;
+        background-color: #2677CC;
+        color: white;
+        text-align: center;
+        border-radius: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .confirm-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .circle-div{
+          margin-bottom: 25px;
+          width: 75px;
+          height: 75px;
+          background-color: rgba(205,223,242,1);
+          clip-path: circle(50% at 50% 50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          mat-icon{
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+        .confirm-alert-div{
+          color: #030303;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+/*================================================
+          Media Queries begin
+  ================================================*/
+@media only screen and (max-width: 768px) {
+  .rental-main{
+    height: 200vh;
+    flex-direction: column;
+    .rental-left{
+      width: 100%;
+      height: 50%;
+    }
+    .rental-right {
+      width: 100%;
+      height: 50%;
+      .r-l-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
