@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./rental-details-page-context.component.scss']
 })
 export class RentalDetailsPageContextComponent {
+    rating: number = 4;
 
 }
