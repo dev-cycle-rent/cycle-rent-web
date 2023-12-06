@@ -1,23 +1,42 @@
-<link rel="stylesheet" href="bike-details-page-context.component.scss">
-<div class="container bike-details-main">
-  <div class="bicycle-details-div">Bicycle Details</div>
-  <div class="bike-image-div">
-    <img src="https://firebasestorage.googleapis.com/v0/b/cyclerent-94e02.appspot.com/o/111%201.png?alt=media&token=c140e9c3-0726-4632-96c4-81d5585ead8f">
-  </div>
-  <div class="rent-dec-div">Rent this bicycle and enjoy a ride through the city streets.</div>
-
-  <div class="cmn-div">
-    <mat-icon>man</mat-icon> Rental Duration
-  </div>
-  <div class="time-div">2 hours</div>
-
-  <div class="cmn-div">
-    <mat-icon>directions_bike</mat-icon> Date
-  </div>
-
-  <div class="time-div">3 PM</div>
-
-  <button type="button" class="d-pill-btn-style">Confirm rental</button>
-
-
+<div class="cycle-details-outer">
+    <div class="cycle-details-inner">
+        <h1 class="header">Bicycle Details</h1>
+        <div class="bike-image-outer">
+            <img alt="bike-image"
+                 src="https://firebasestorage.googleapis.com/v0/b/cyclerent-94e02.appspot.com/o/111%201.png?alt=media&token=c140e9c3-0726-4632-96c4-81d5585ead8f">
+        </div>
+        <p class="text">Rent this bicycle and enjoy a ride through the city streets.</p>
+        <div class="title-outer">
+            <mat-icon>accessibility_new</mat-icon>
+            <p class="title-text">Rental Duration</p>
+        </div>
+        <mat-form-field class="form-field" appearance="outline">
+            <mat-select placeholder="2 hours">
+                <mat-option value="2 hours">2 hours</mat-option>
+                <mat-option value="2 hours">3 hours</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <div class="title-outer">
+            <mat-icon>directions_bike</mat-icon>
+            <p class="title-text">Date</p>
+        </div>
+        <div class="calender-outer">
+            <mat-calendar></mat-calendar>
+        </div>
+        <div class="title-outer">
+            <mat-icon>schedule</mat-icon>
+            <p class="title-text">Rental Time</p>
+        </div>
+        <mat-form-field class="form-field" appearance="outline">
+            <mat-select  placeholder="2 pm">
+                <mat-option value="2 pm">2 pm</mat-option>
+                <mat-option value="2 pm">3 pm</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <div class="button-wrapper">
+            <div class="button-outer" routerLink="/process/rental-details">
+                <p class="button-text">Confirm rental</p>
+            </div>
+        </div>
+    </div>
 </div>

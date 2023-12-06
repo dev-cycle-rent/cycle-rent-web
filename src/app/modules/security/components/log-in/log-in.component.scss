@@ -1,210 +1,112 @@
-.log-in-main{
+.login-outer {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  .left-div {
-    width: 50%;
-    height: 100%;
-    background-color: #CDF2D3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .log-in-img{
-      width: 412px;
-      height: 412px;
-      margin-top: 50px;
-      background-image: url("https://firebasestorage.googleapis.com/v0/b/cyclerent-94e02.appspot.com/o/Vector%20(1).png?alt=media&token=3da82740-96f4-4fa1-ad28-62091773ce7c");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    .log-in-welcome{
-      color: #030303;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-align: center;
-      margin-top: -10px;
-    }
-    .log-in-dic{
-      margin-top: 20px;
-      color: #030303;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-  .right-div{
-    width: 50%;
-    height: 100%;
-    .top-div{
-      height: 10%;
-      width: 100%;
-      padding-top: 40px;
-      padding-right: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      .top-logo-div{
-        color: #030303;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
-      .top-dec-div{
-        margin-top: 2px;
-        color: #030303;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-      }
-    }
-    .bottom-div{
-      height: 90%;
-      margin-right: 40px;
-      display: flex;
-      justify-content: right;
-      .inner-bottom-div{
-        width: 75%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        .header-log-in{
-          color: #1E1F26;
-          margin-top: 100px;
-          margin-bottom: 20px;
-          font-size: 32px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-        .log-input-div{
-          margin-bottom: 25px;
-          label{
-            color: #080A0B;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 25px;
-          }
-          .log-search-outer{
-            width: 350px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px;
-            border-radius: 25px;
-            border: 1px solid rgba(0, 0, 0, 0.35);
-            //box-shadow: rgba(0, 0, 0, 0.35) 0 5px 5px;
-            .search{
-              width: 100%;
-              border: none;
-              outline: none;
-              color: #1F1F1F;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-            }
-          }
-        }
-        .log-in-btn{
-          margin-top: 15px;
-          width: 350px;
-          height: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 25px;
-          border: 1px solid #030303;
-          background-color: white;
-          color: #030303;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-        .dont-have-div{
-          color: #030303;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-top: 50px;
-        }
-        .log-sing-up-btn{
-          width: 119px;
-          height: 35px;
-          color: #030303;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-top: 15px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 25px;
-          border: 1px solid #030303;
-          background-color: white;
-        }
-      }
+  margin: 0 ;
+}
 
-    }
-  }
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #CDF2D3;
 }
-/*================================================
-          Media Queries begin
-  ================================================*/
+
+.header {
+  text-align: center;
+}
+
+.top-text {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.top-sub-text {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.top-text, .top-sub-text {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-outer {
+  width: 100%;
+  max-width: 350px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.label {
+  margin-top: 23px;
+  font-size: 16px;
+  padding-bottom:0 ;
+}
+
+.input {
+  border: 1px solid black;
+  border-radius: 50px;
+  max-width: 350px;
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.login-button {
+  margin-top: 25px;
+  max-width: 350px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button-text {
+  margin: 0;
+}
+
+.sign-up-button {
+  margin-top: 25px;
+  max-width: 350px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.sign-up-text {
+  margin: 0;
+}
+
+.dont-have-account {
+  margin-top: 50px;
+}
+
+
 @media only screen and (max-width: 768px) {
-  .log-in-main {
-    flex-direction: column;
-    height: 150vh;
-    .left-div{
-      width: 100%;
-      height: 33%;
-      .log-in-img {
-        width: 300px;
-        height: 300px;
-        margin-top: 10px;
-      }
-      .log-in-welcome{
-        font-size: 22px;
-      }
-      .log-in-dic{
-        margin-top: 10px;
-        font-size: 12px;
-      }
-    }
-    .right-div{
-      width: 100%;
-      height: 67%;
-      .inner-bottom-div{
-        width: 100%;
-        align-items: center;
-      }
-    }
+  .left {
+    display: none;
   }
-}
-@media only screen and (max-width: 500px) {
-  .log-search-outer {
-    width: 250px!important;
-  }
-  .log-in-btn{
-    width: 250px!important;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .log-search-outer {
-    width: 200px!important;
-  }
-  .log-in-btn{
-    width: 200px!important;
-  }
+
 }

@@ -1,68 +1,154 @@
-.bike-details-main{
-  border: 1px solid red;
-  width: 100%;
-  height: 120vh;
+//.bike-details-main{
+//  border: 1px solid red;
+//  width: 100%;
+//  height: 120vh;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  .bicycle-details-div{
+//    margin-top: 5px;
+//    color: #030303;
+//    font-size: 62px;
+//    font-style: normal;
+//    font-weight: 400;
+//    line-height: normal;
+//  }
+//  .bike-image-div{
+//    margin-top: 20px;
+//    width: 386px;
+//    height: 251px;
+//    img{
+//      width: 100%;
+//      height: 100%;
+//    }
+//  }
+//  .rent-dec-div{
+//    margin-top: 40px;
+//    color: #030303;
+//    text-align: center;
+//    font-size: 20px;
+//    font-style: normal;
+//    font-weight: 400;
+//    line-height: normal;
+//  }
+//  .cmn-div{
+//    margin-top: 30px;
+//    color: #030303;
+//    font-size: 24px;
+//    font-style: normal;
+//    font-weight: 400;
+//    line-height: normal;
+//  }
+//  .time-div{
+//    margin-top: 15px;
+//    width: 575px;
+//    height: 46.502px;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    border-radius: 23px;
+//    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+//  }
+//  .d-pill-btn-style{
+//    margin-top: 40px;
+//    background-color: #2677CC;
+//    border: none;
+//    color: white;
+//    text-align: center;
+//    width: 250px;
+//    height: 76px;
+//    border-radius: 38px;
+//    text-decoration: none;
+//    cursor: pointer;
+//    font-size: 24px;
+//    font-style: normal;
+//    font-weight: 400;
+//    line-height: normal;
+//  }
+//}
+
+.cycle-details-outer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.cycle-details-inner {
+  max-width: 600px;
+}
+
+.header {
+  color: #030303;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.bike-image-outer {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.title-outer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
   align-items: center;
-  .bicycle-details-div{
-    margin-top: 5px;
-    color: #030303;
-    font-size: 62px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .bike-image-div{
-    margin-top: 20px;
-    width: 386px;
-    height: 251px;
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .rent-dec-div{
-    margin-top: 40px;
-    color: #030303;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .cmn-div{
-    margin-top: 30px;
-    color: #030303;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .time-div{
-    margin-top: 15px;
-    width: 575px;
-    height: 46.502px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 23px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-  }
-  .d-pill-btn-style{
-    margin-top: 40px;
-    background-color: #2677CC;
-    border: none;
-    color: white;
-    text-align: center;
-    width: 250px;
-    height: 76px;
-    border-radius: 38px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+}
+
+.title-text {
+  margin: 0 0 0 10px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.content-text {
+  margin: 0;
+}
+
+.calender-outer {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.button-wrapper {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-outer {
+  padding: 10px 25px;
+  background: #2677CC;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.button-text {
+  margin: 0;
+  color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+    font-size: 35px;
   }
 }

@@ -4,23 +4,11 @@
   padding-bottom: 60px;
 }
 
-.process-main-inner {
-  display: none;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  .process-main-outer {
-    display: none;
-  }
-  .process-main-inner {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0 30px 60px 30px;
-  }
+
 }

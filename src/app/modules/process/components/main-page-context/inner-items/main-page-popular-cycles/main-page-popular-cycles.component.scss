@@ -1,8 +1,9 @@
-.main-page-popular-cycles-div{
-  .popular-inner{
+.main-page-popular-cycles-div {
+  .popular-inner {
     height: 245px;
     margin-top: 55px;
-    .inner-top{
+
+    .inner-top {
       height: 25px;
       color: #030303;
       font-size: 20px;
@@ -11,19 +12,21 @@
       line-height: normal;
       margin-bottom: 5px;
     }
-    .inner-bottom{
+
+    .inner-bottom {
       height: 220px;
       width: 100%;
       padding: 0;
       box-sizing: border-box;
       display: grid;
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr 1fr;
       grid-gap: 5px;
       grid-template-areas:
         "a b d e"
         "a c d f";
-      .item{
+
+      .item {
         border-radius: 10px;
         position: relative;
 
@@ -31,7 +34,8 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        .bike-num{
+
+        .bike-num {
           width: 95px;
           height: 26px;
           border-radius: 16px;
@@ -49,22 +53,28 @@
           left: 10px;
         }
       }
-      .item-1{
+
+      .item-1 {
         grid-area: a;
       }
-      .item-2{
+
+      .item-2 {
         grid-area: b;
       }
-      .item-3{
+
+      .item-3 {
         grid-area: c;
       }
-      .item-4{
+
+      .item-4 {
         grid-area: d;
       }
-      .item-5{
+
+      .item-5 {
         grid-area: e;
       }
-      .item-6{
+
+      .item-6 {
         grid-area: f;
       }
     }
@@ -74,9 +84,26 @@
 /*================================================
           Media Queries begin
   ================================================*/
+@media only screen and (max-width: 992px) {
+  .main-page-popular-cycles-div {
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner-bottom {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    grid-template-areas:
+        "a b c"
+        "d e f" !important;
+  }
+}
+
 @media only screen and (max-width: 576px) {
-  .main-page-popular-cycles-div{
-    height: 150vh!important;
+  .main-page-popular-cycles-div {
+    height: 150vh !important;
+
     .popular-inner {
       height: 100% !important;
 
@@ -85,23 +112,26 @@
       }
     }
   }
-  .inner-bottom{
-    grid-template-columns: 1fr 1fr!important;
-    grid-template-rows: 1fr 1fr 1fr!important;
+  .inner-bottom {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
     grid-template-areas:
         "a b"
         "c d"
-        "e f"!important;
+        "e f" !important;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .main-page-popular-cycles-div {
-    margin-top: 280px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main-page-popular-cycles-div {
-    margin-top: 340px;
+@media only screen and (max-width: 450px) {
+  .inner-bottom {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f" !important;
   }
 }

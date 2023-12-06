@@ -80,12 +80,14 @@
   }
 }
 
-@media only screen and (max-width: 439px) {
+@media only screen and (max-width: 499px) {
   .slider-heading {
     font-size: 20px !important;
+    text-align: center;
   }
   .slider-dic {
     font-size: 10px !important;
+    text-align: center;
   }
   .main-page-form-div {
     height: 50px !important;
@@ -94,7 +96,7 @@
 
 @media only screen and (max-width: 992px) {
   .main-page-form-div {
-    bottom: -250px;
+    top: 175px;
   }
 }
 

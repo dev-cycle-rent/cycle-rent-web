@@ -6,6 +6,8 @@ import { SecurityComponent } from './security.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     SecurityRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule,
+    MatInputModule
   ]
 })
 export class SecurityModule { }
