@@ -1,27 +1,24 @@
 .header{
   height: 36px;
   margin-top: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .company-name{
-  font-family: 'Roboto', sans-serif;
   align-items: center;
   color: #030303;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 .log-out-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .pill-btn-style{
     background-color: #2677CC;
     border: none;
     color: white;
     text-align: center;
-    width: 101px;
-    height: 34px;
+    padding: 7px 20px;
     border-radius: 16px;
     text-decoration: none;
     cursor: pointer;

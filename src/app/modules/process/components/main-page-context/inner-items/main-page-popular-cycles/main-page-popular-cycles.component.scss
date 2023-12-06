@@ -1,5 +1,4 @@
 .main-page-popular-cycles-div{
-  height: 50vh;
   .popular-inner{
     height: 245px;
     margin-top: 55px;
@@ -96,3 +95,13 @@
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .main-page-popular-cycles-div {
+    margin-top: 280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-page-popular-cycles-div {
+    margin-top: 340px;
+  }
+}

@@ -1,17 +1,18 @@
-.main-slider{
-  height: 158px;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/cyclerent-94e02.appspot.com/o/white-bicycle-standing-park.jpg?alt=media&token=b488fe65-0b18-4188-bed2-0c7ef3d49a7c");
+.main-slider {
+  height: 250px;
+  background-image: url("https://images.ctfassets.net/ogr4ifihl2yh/5JFYxFlsjwE0yVW8ru7R9p/09e48f58499476af7bcdf1cd1221977b/64951387_l.jpg?w=1000&q=85");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   fill: rgba(255, 255, 255, 0.48);
   border-radius: 10px;
   position: relative;
-  .img-filter{
+
+  .img-filter {
     position: absolute;
     left: 0;
     top: 0;
-    border-radius:inherit;
+    border-radius: inherit;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.48);
@@ -19,7 +20,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    .slider-heading{
+
+    .slider-heading {
       color: #030303;
       font-family: 'Roboto', sans-serif;
       width: 100%;
@@ -31,7 +33,8 @@
       font-weight: 700;
       line-height: normal;
     }
-    .slider-dic{
+
+    .slider-dic {
       margin-top: 12px;
       color: #030303;
       font-family: 'Roboto', sans-serif;
@@ -45,56 +48,58 @@
       justify-content: center;
     }
   }
-  .main-page-form-div{
-    width: 75%;
-    height: 70px;
-    border-radius: 35px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    .form-div-inner{
-      width: 90%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      app-main-page-form{
-        width: 100%;
-      }
-    }
-  }
 }
 
+.main-page-form-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  margin: auto;
+
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*================================================
           Media Queries begin
   ================================================*/
 @media only screen and (max-width: 768px) {
-  .slider-heading{
-    font-size: 30px!important;
+  .slider-heading {
+    font-size: 30px !important;
   }
-  .slider-dic{
-    font-size: 15px!important;
+  .slider-dic {
+    font-size: 15px !important;
   }
-  .main-page-form-div{
-    height: 60px!important;
+  .main-page-form-div {
+    height: 60px !important;
   }
 }
 
 @media only screen and (max-width: 439px) {
-  .slider-heading{
-    font-size: 20px!important;
+  .slider-heading {
+    font-size: 20px !important;
   }
-  .slider-dic{
-    font-size: 10px!important;
+  .slider-dic {
+    font-size: 10px !important;
   }
-  .main-page-form-div{
-    height: 50px!important;
+  .main-page-form-div {
+    height: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-page-form-div {
+    bottom: -250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-page-form-div {
+    position: relative;
   }
 }
