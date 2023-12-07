@@ -171,6 +171,7 @@
   font-weight: 400;
   line-height: normal;
   margin-bottom: 25px;
+  text-align: left;
 
   span {
     margin-left: 25px;
@@ -179,7 +180,7 @@
 
 .paid-btn {
   width: 60px;
-  padding: 5px 0  ;
+  padding: 5px 0;
   border: none;
   background-color: #2677CC;
   color: white;
@@ -197,7 +198,7 @@
 .contact-support-btn {
   max-width: 300px;
   margin-bottom: 25px;
-  padding: 5px 25px;
+  padding: 8px 25px;
   border: none;
   background-color: #2677CC;
   color: white;
@@ -264,16 +265,37 @@
   .r-l-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
-
+  .total-rent-div {
+    text-align: left;
+    width: 100%;
+  }
   .contact-details-div {
-    width: fit-content;
-    align-items: center;
+    width: 100%;
+  }
+  .r-l-content-heading {
+    text-align: left;
+    width: 100%;
   }
   .r-l-content-duration {
-    width: fit-content;
+    width: 100%;
+  }
+  .contact-details-cmn-div {
+    text-align: left;
+  }
+  .rental-left-content {
+    width: 100%;
+  }
+
+  .contact-support-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
+
   .rental-main {
     height: 200vh;
     flex-direction: column;

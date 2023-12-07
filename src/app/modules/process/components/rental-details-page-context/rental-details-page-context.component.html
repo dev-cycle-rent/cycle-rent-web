@@ -7,7 +7,8 @@
                     <div class="bike-model">Bike Model</div>
                     <div class="bike-rate">
  <span>
-  <mat-icon *ngFor="let star of [1, 2, 3, 4, 5]; let i = index" [ngClass]="{ 'gold-star': i < rating, 'black-star': i >= rating }" aria-hidden="true">
+  <mat-icon *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+            [ngClass]="{ 'gold-star': i < rating, 'black-star': i >= rating }" aria-hidden="true">
     {{ star <= rating ? 'star' : 'star_border' }}
   </mat-icon>
 </span>
@@ -30,10 +31,10 @@
             <div class="r-l-content-duration">
                 <div class="r-l-content-duration-detail">
                     <mat-icon>directions_bike</mat-icon>
-                    <p class="detail">Pick-up<span>Friday, 09 December 2022, from 3 PM</span></p></div>
+                    <p class="detail">Pick-up</p><span>Friday, 09 December 2022, from 3 PM</span></div>
                 <div class="r-l-content-duration-detail">
                     <mat-icon>directions_bike</mat-icon>
-                    <p class="detail">Return <span>Monday, 12 December 2022, until 11 AM</span></p></div>
+                    <p class="detail">Return </p><span>Monday, 12 December 2022, until 11 AM</span></div>
 
             </div>
             <div class="contact-details-div">
